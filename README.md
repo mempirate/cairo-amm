@@ -3,20 +3,21 @@
 A simple AMM written in Cairo for StarkNet, using the Nile development framework.
 
 ## Getting started
-Create and activate venv
+Create and activate a new virtual env:
 ```
 python3 -m venv env
 source env/bin/activate
 ```
-Install dependencies
+Install Nile and dependencies:
 ```
+pip install cairo-nile
 nile init
 ```
-Compile contract
+Compile the `pool.cairo` contract:
 ```
 nile compile contracts/pool.cairo
 ```
-Run the tests with
+Run the tests with pytest:
 ```
 pytest -s 
 ```
