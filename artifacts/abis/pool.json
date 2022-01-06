@@ -1,0 +1,79 @@
+[
+    {
+        "inputs": [
+            {
+                "name": "account_id",
+                "type": "felt"
+            },
+            {
+                "name": "token_type",
+                "type": "felt"
+            }
+        ],
+        "name": "get_account_token_balance",
+        "outputs": [
+            {
+                "name": "balance",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "token_a",
+                "type": "felt"
+            },
+            {
+                "name": "token_b",
+                "type": "felt"
+            }
+        ],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "name": "token_type",
+                "type": "felt"
+            }
+        ],
+        "name": "get_pool_token_balance",
+        "outputs": [
+            {
+                "name": "balance",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "account_id",
+                "type": "felt"
+            },
+            {
+                "name": "token_from",
+                "type": "felt"
+            },
+            {
+                "name": "amount_from",
+                "type": "felt"
+            }
+        ],
+        "name": "swap",
+        "outputs": [
+            {
+                "name": "amount_to",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    }
+]
